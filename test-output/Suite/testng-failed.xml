@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="tests" name="Test1(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="testng.LoginPage">
+        <methods>
+          <include name="endTest"/>
+          <include name="setupSuite"/>
+          <include name="beforeTest"/>
+          <include name="afterTest"/>
+          <include name="loginSite"/>
+          <include name="startTest"/>
+        </methods>
+      </class> <!-- testng.LoginPage -->
+    </classes>
+  </test> <!-- Test1(failed) -->
+</suite> <!-- Failed suite [Suite] -->
